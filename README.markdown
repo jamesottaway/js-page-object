@@ -8,6 +8,18 @@ The result of applying such a pattern is that your automated functional tests ar
 
 This means that the specific logic for how to access abnd manipulate elements on the pages are encapsulated solely in the page object, and will only ever need to be updated in a single spot should they change.
 
+## Deprecation Notice
+
+While I still love the idea behind the Page Object pattern, I'm becoming more skeptical of giving ownership of important layers of code to third-party libraries.
+
+The obvious advantage to adopting libraries like what `js-page-object` was initially intended to be is to avoid duplication by taking advantage of domain-specific languages.
+
+Unfortunately, the oft-ignored costs of coupling the destiny of your codebase to that of a third-party library is that you lose both control, but more importantly, visibility of the code you now depend on.
+
+Since I've started making an effort to understand and carefully consider the obscurity that comes with each added layer of abstraction, I don't plan to ever get around to implementing the idea I've previously expressed below.
+
+[George Ornbo wrote a very well-considered blog post](http://shapeshed.com/all-magic-comes-with-a-price/) on the topic of abstraction and obscurity in software development, which helps illustrate my point.
+
 ## Wrong
 
 Previously, the only way to use Selenium WebDriver to open Google, search for something and ensure we are on the right page would be as follows:
