@@ -8,6 +8,16 @@ The result of applying such a pattern is that your automated functional tests ar
 
 This means that the specific logic for how to access abnd manipulate elements on the pages are encapsulated solely in the page object, and will only ever need to be updated in a single spot should they change.
 
+## Thanks, Alister!
+
+[Alister Scott](https://github.com/alisterscott) has a great blog post series titled 'WebDriverJS & Mocha', which includes a post on using page objects:
+
+- [Getting Started with WebDriverJS & Mocha](http://watirmelon.com/2015/10/28/getting-started-with-webdriverjs-mocha/)
+- [WebDriverJS & Mocha Part 2: Hooks](http://watirmelon.com/2015/10/30/webdriverjs-mocha-part-2-hooks/)
+- [WebDriverJS & Mocha Part 3: Page Objects](http://watirmelon.com/2015/10/30/webdriverjs-mocha-part-3-page-objects/)
+
+I'd strongly encourage you to read his posts, and explore his [webdriver-js-demo](https://github.com/alisterscott/webdriver-js-demo) repository.
+
 ## Deprecation Notice
 
 While I still love the idea behind the Page Object pattern, I'm becoming more skeptical of giving ownership of important layers of code to third-party libraries.
